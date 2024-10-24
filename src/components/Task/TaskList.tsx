@@ -14,8 +14,10 @@ export const TaskList: React.FC<TaskListProps> = ({ tasks, onDeleteTask, onEditT
                 <li key={task.id} className="task-item">
                     <h3>{task.title}</h3>
                     <p>{task.description}</p>
-                    <button onClick={() => onEditTask(task)}>Edit</button>
-                    <button onClick={() => onDeleteTask(task.id as number)}>Delete</button>
+                    <div className="options-task">
+                        <button onClick={() => onEditTask(task)}>Edit</button>
+                        <button onClick={() => onDeleteTask(task.id as number)}>Delete</button>
+                    </div>
                 </li>
             ))}
         </div>

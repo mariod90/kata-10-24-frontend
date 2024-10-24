@@ -41,6 +41,11 @@ button:hover {
     justify-content: space-between;
 }
 
+.task-item .options-task {
+    display: flex;
+    gap: 8px;
+}
+
 .error {
     color: red;
 }
